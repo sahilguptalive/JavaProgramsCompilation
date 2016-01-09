@@ -1,5 +1,6 @@
+package Java8;
 import java.util.*;
-public class Java8StringJoin{
+public class StringJoinImplementation {
 
 	public static void main(String[] args){
 

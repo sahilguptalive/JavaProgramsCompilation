@@ -1,8 +1,10 @@
-import java.lang.reflect.*;
-import java.util.function.*;
+package Java8;
+import java.lang.reflect.Method;
+import java.lang.reflect.Parameter;
+
 import static java.lang.System.out;
 
-public class Java8Reflection{
+public class ReflectionImplementation {
 
 	private static final String  fmt = "%24s: %s%n";
 	public static void main(String[] args){

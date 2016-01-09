@@ -1,5 +1,6 @@
+package Java8;
 import java.lang.annotation.Repeatable;
-public class Java8Annotation{
+public class AnnotationImplementation {
 	public static void main(String[] args){
 
 

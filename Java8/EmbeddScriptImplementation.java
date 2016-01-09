@@ -1,3 +1,5 @@
+package Java8;
+
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
@@ -5,7 +7,7 @@ import javax.script.Invocable;
 import java.io.*;
 import java.lang.NoSuchMethodException;
 
-public class EmbeddScript{
+public class EmbeddScriptImplementation {
 	public static void main(String[] args){
 
 		//initialise the script engine manager 

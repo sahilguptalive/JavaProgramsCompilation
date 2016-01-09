@@ -1,8 +1,11 @@
 *.class
 *.swp
 
+/.idea
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
+/out
+/JavaProgramsCompilation.iml
 
 # Package Files #
 *.jar

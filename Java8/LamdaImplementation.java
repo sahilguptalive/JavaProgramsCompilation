@@ -1,4 +1,5 @@
-public class Java8Lamda{
+package Java8;
+public class LamdaImplementation {
 	public static void main(String[] args){
 
 		NoArgLambda someLambda=()->{System.out.println("Message from lambda with no args");};
