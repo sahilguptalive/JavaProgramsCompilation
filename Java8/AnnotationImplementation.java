@@ -64,8 +64,6 @@ public class AnnotationImplementation {
 
         //we can use TYPE_USE type annotations while using a type.
         new @A DBAccess(); //new instance
-        String var1 = (@B String) new Object(); //type casting
-
 
     }
 

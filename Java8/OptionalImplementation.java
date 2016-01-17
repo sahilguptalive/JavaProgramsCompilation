@@ -11,26 +11,30 @@ public class OptionalImplementation {
 
         //when using Optional.of, we have to be sure that user modal is not null
         //else NPE would be thrown
-        Optional<UserModel> nonNullOptional=Optional.of(new UserModel(1,"Sahil"));
+        Optional<UserModel> nonNullOptional = Optional.of(new UserModel(1, "Sahil"));
         printDetailsOfOptional(nonNullOptional);
 
         //better version of method to create an instance of Optional is following
         //here instance of UserModel can be null
         //when instance of UserModel is empty, then Optional class returns empty instance which does not contain null (Optional.empty())
         //else returns the optional class instance which would be containing the  instance of UserModel instance
-        Optional<UserModel> nullableOptional=Optional.ofNullable(new UserModel(2,"Gupta"));
+        Optional<UserModel> nullableOptional = Optional.ofNullable(new UserModel(2, "Gupta"));
         printDetailsOfOptional(nullableOptional);
 
         //we can use ofNullable function to create empty optionals
         //throws NoSuchElementException is instance is absent.
-        Optional<UserModel> emptyOptional=Optional.ofNullable(null);
+        Optional<UserModel> emptyOptional = Optional.ofNullable(null);
         printDetailsOfOptional(emptyOptional);
 
     }
 
     private static void printDetailsOfOptional(Optional<UserModel> nullableOptional) {
-        System.out.println("is present: "+nullableOptional.isPresent());
-        System.out.println("user details: "+nullableOptional.get().toString());
+
+        System.out.println("is present: " + nullableOptional.isPresent());
+        if (nullableOptional.isPresent()) {
+
+            System.out.println("user details: " + nullableOptional.get().toString());
+        }
     }
 
     private static class UserModel {

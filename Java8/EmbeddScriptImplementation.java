@@ -26,7 +26,7 @@ public class EmbeddScriptImplementation {
 		}
 		try{
 			//load a java script file using file reader
-			nashorn.eval(new FileReader("CalculatorScript.js"));
+			nashorn.eval(new FileReader("Java8/scripts/js/CalculatorScript.js"));
 		}catch(FileNotFoundException|ScriptException e){
 			e.printStackTrace();
 		}
