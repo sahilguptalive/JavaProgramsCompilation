@@ -1,4 +1,4 @@
-public class ThreadingDemo{
+public class SleepAndInterrupt{
 
     public static void main(String args[]) throws InterruptedException{
    
